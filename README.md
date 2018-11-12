@@ -1,4 +1,4 @@
-# SideBarEx
+# SideBar Example
 
 Sidebar menu  Example using  Side Menu https://github.com/jonkykong/SideMenu
 
