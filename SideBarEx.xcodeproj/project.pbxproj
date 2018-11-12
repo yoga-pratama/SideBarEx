@@ -12,6 +12,7 @@
 		0AEB59D72199591200352879 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0AEB59D52199591200352879 /* Main.storyboard */; };
 		0AEB59D92199591300352879 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0AEB59D82199591300352879 /* Assets.xcassets */; };
 		0AEB59DC2199591300352879 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0AEB59DA2199591300352879 /* LaunchScreen.storyboard */; };
+		4A83CC0C891E5E96B6064FDB /* Pods_SideBarEx.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30B4EF1351185B29C9623FCC /* Pods_SideBarEx.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,9 @@
 		0AEB59D82199591300352879 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0AEB59DB2199591300352879 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0AEB59DD2199591300352879 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		12C73EEA70913FCBFFAA9CBC /* Pods-SideBarEx.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SideBarEx.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SideBarEx/Pods-SideBarEx.debug.xcconfig"; sourceTree = "<group>"; };
+		2086F382849714AA08204A75 /* Pods-SideBarEx.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SideBarEx.release.xcconfig"; path = "Pods/Target Support Files/Pods-SideBarEx/Pods-SideBarEx.release.xcconfig"; sourceTree = "<group>"; };
+		30B4EF1351185B29C9623FCC /* Pods_SideBarEx.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SideBarEx.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4A83CC0C891E5E96B6064FDB /* Pods_SideBarEx.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +45,8 @@
 			children = (
 				0AEB59D02199591200352879 /* SideBarEx */,
 				0AEB59CF2199591200352879 /* Products */,
+				96E52C1DCF06457883B92DEE /* Pods */,
+				6DFE957DC9C21B4F0B2B0C21 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +71,23 @@
 			path = SideBarEx;
 			sourceTree = "<group>";
 		};
+		6DFE957DC9C21B4F0B2B0C21 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				30B4EF1351185B29C9623FCC /* Pods_SideBarEx.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		96E52C1DCF06457883B92DEE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				12C73EEA70913FCBFFAA9CBC /* Pods-SideBarEx.debug.xcconfig */,
+				2086F382849714AA08204A75 /* Pods-SideBarEx.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +95,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0AEB59E02199591300352879 /* Build configuration list for PBXNativeTarget "SideBarEx" */;
 			buildPhases = (
+				CF7B6705CDF549ED106B92E6 /* [CP] Check Pods Manifest.lock */,
 				0AEB59CA2199591200352879 /* Sources */,
 				0AEB59CB2199591200352879 /* Frameworks */,
 				0AEB59CC2199591200352879 /* Resources */,
+				BE8768C983F85A03FBAE13B1 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -129,6 +155,53 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		BE8768C983F85A03FBAE13B1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-SideBarEx/Pods-SideBarEx-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SideMenu/SideMenu.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SideMenu.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SideBarEx/Pods-SideBarEx-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CF7B6705CDF549ED106B92E6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SideBarEx-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		0AEB59CA2199591200352879 /* Sources */ = {
@@ -280,6 +353,7 @@
 		};
 		0AEB59E12199591300352879 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 12C73EEA70913FCBFFAA9CBC /* Pods-SideBarEx.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -298,6 +372,7 @@
 		};
 		0AEB59E22199591300352879 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2086F382849714AA08204A75 /* Pods-SideBarEx.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
