@@ -1,0 +1,6 @@
+framework module Pods_SideBarEx {
+  umbrella header "Pods-SideBarEx-umbrella.h"
+
+  export *
+  module * { export * }
+}
